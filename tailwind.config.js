@@ -5,7 +5,44 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Spline': ['Spline', 'sans-mono'],
+        'Acme': ['Acme'],
+       
+      },
+      animation: {
+        blob: "blob 6s infinite",
+        text: "text 5s ease infinite",
+
+      },
+      keyframes: {
+        blob : {
+          "0%" : {
+            transform: "translate(-10px, 10px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(25px, -30px) scale(1.3)",
+          },
+          "66%": {
+            transform: "translate(-15px, 15px) scale(1.1)",
+          },
+          "100%": {
+            transform: "translate(-10px, 10px) scale(1)",
+          }
+        },
+        text: {
+          '0%, 100%': {
+             'background-size':'200% 200%',
+              'background-position': 'left center'
+          },
+          '50%': {
+             'background-size':'200% 200%',
+              'background-position': 'right center'
+          }
+      },
+      }
+    },
   },
   plugins: [],
 }
