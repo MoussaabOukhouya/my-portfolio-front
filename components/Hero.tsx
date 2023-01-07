@@ -1,13 +1,16 @@
 import React from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import HeroBackground from "./HeroBackground";
+import Image from "next/image";
+import me from "./../assets/Images/Me.png"
+import logo from "./../assets/Images/MyLogo.png"
 
 type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "👋 Hi there !",
+      "👋 Hi There !",
       "My name is Moussaab Oukhouya",
       "I have a passion for building efficient web applications.",
       "& I enjoy learning about new development technologies.",
@@ -18,9 +21,9 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center ">
       <HeroBackground />
-      <img
+      <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/C5603AQFEXviEgWuKFQ/profile-displayphoto-shrink_800_800/0/1635446368882?e=1678320000&v=beta&t=U7s7Ohwe6TmthG4m-e3zliCcVrQ1AnOoV2ylvQ68hH0"
+        src={me}
         alt="Profile Image"
       />
       <div>
