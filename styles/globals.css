@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 
 
 
@@ -17,5 +18,13 @@
 
     .animation-delay-4000 {
         animation-delay:  4s;
+    }
+}
+
+@layer components {
+    .heroButtons {
+        @apply px-6 py-2 border border-transparent bg-secondaryColor/20 rounded-full 
+        uppercase text-sm tracking-wider text-gray-200 transition-all hover:bg-thirdColor/30 hover:text-white font-Rowdies
+        hover:scale-110
     }
 }
