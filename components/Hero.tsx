@@ -12,8 +12,8 @@ export default function Hero({}: Props) {
     words: [
       "👋 Hi There !",
       "My name is Moussaab Oukhouya",
-      "I have a passion for building efficient web applications.",
-      "& I enjoy learning about new development technologies.",
+      " 👨‍💻 I have a passion for building efficient web applications.",
+      "& I enjoy learning about new development technologies. 👾",
     ],
     loop: true,
     delaySpeed: 2000,
