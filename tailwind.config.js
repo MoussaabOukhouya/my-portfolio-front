@@ -6,9 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'secondaryColor' : '#CD9E45',
+        'thirdColor' : '#A72414',
+      },
+
       fontFamily: {
-        'Spline': ['Spline', 'sans-mono'],
-        'Acme': ['Acme'],
+        'Spline': ['Spline','monospace'],
+        'Acme': ['Acme','sans-serif'],
+        'Rowdies': ['Rowdies','cursive'],
        
       },
       animation: {
