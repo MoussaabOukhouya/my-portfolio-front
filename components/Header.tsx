@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
 import logo from "./../assets/Images/MyLogo.png";
@@ -110,7 +110,7 @@ export default function Header({}: Props) {
           duration: 1,
         }}
       >
-        <button onClick={handleOpenButtonClick} className="text-4xl self-end  text-white ">
+        <button onClick={handleOpenButtonClick}  className="text-4xl self-end  text-white ">
           &#9776;
         </button>
 
@@ -120,42 +120,126 @@ export default function Header({}: Props) {
             className="absolute top-0 bg-black w-full text-5xl flex flex-col
         justify-content-center origin-top animate-open-menu"
           >
-            <button 
+            <motion.button
+            initial={{
+              x: 0,
+              opacity: 0,
+              scale: 1,
+            }}
+            animate={{
+              
+              rotate:360,
+              opacity: 1,
+              
+            }}
+            transition={{
+              duration: 0.3,
+            }}
             onClick={handleCloseButtonClick}
-            className="text-8xl self-end px-6 text-white">
+            className="text-8xl self-end px-6 text-white origin-top-right animate-close-menu">
                 &times;
-            </button>
+            </motion.button>
             
             <nav className="flex flex-col min-h-screen items-center py-8 text-white">
               <Link
                 href="#about"
                 className=" w-full text-center py-6 hover:opacity-90"
               >
-                <button className="">About</button>
+                <motion.button 
+                initial={{
+                  x: 500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+                className="">About</motion.button>
               </Link>
               <Link
                 href="#experience"
                 className="w-full text-center py-6 hover:opacity-90"
               >
-                <button className="">Experience</button>
+                <motion.button
+                initial={{
+                  x: -500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+                 className="">Experience</motion.button>
               </Link>
               <Link
                 href="#projects"
                 className="w-full text-center py-6 hover:opacity-90"
               >
-                <button className="">Projects</button>
+                <motion.button
+                initial={{
+                  x: 500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+                className="">Projects</motion.button>
               </Link>
               <Link
                 href="#skills"
                 className="w-full text-center py-6 hover:opacity-90"
               >
-                <button className="">Skills</button>
+                <motion.button
+                initial={{
+                  x: -500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+                className="">Skills</motion.button>
               </Link>
               <Link
                 href="#contact"
                 className="w-full text-center py-6 hover:opacity-90"
               >
-                <button className="">Contact</button>
+                <motion.button 
+                initial={{
+                  x: 500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+                className="">Contact</motion.button>
               </Link>
             </nav>
           </section>
