@@ -23,7 +23,7 @@
 
 @layer components {
     .heroButtons {
-        @apply px-6 py-2 border border-transparent bg-secondaryColor/20 rounded-full 
+        @apply px-6 py-2 border border-transparent bg-secondaryColor/20 rounded-full ml-4
         uppercase text-sm tracking-wider text-gray-200 transition-all hover:bg-thirdColor/30 hover:text-white font-Rowdies
         hover:scale-110
     }
