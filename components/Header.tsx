@@ -2,12 +2,26 @@ import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
 import logo from "./../assets/Images/MyLogo.png";
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import Link from "next/link";
+
 type Props = {};
 
 export default function Header({}: Props) {
+  const [isResizing, setIsResizing] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    function handleResizeStart() {
+      setIsResizing(true);
+      setMenuOpen(false);
+    }
+    
+    window.addEventListener('resize', handleResizeStart);
+    return () => {
+      window.removeEventListener('resize', handleResizeStart);
+    };
+  }, []);
 
   const handleOpenButtonClick = () => {
     setMenuOpen(true);
