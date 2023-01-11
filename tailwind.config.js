@@ -6,25 +6,32 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        md: "880px",
+      },
       colors: {
-        'secondaryColor' : '#CD9E45',
-        'thirdColor' : '#A72414',
+        secondaryColor: "#CD9E45",
+        thirdColor: "#A72414",
       },
 
       fontFamily: {
-        'Spline': ['Spline','monospace'],
-        'Acme': ['Acme','sans-serif'],
-        'Rowdies': ['Rowdies','cursive'],
-       
+        Spline: ["Spline", "monospace"],
+        Acme: ["Acme", "sans-serif"],
+        Rowdies: ["Rowdies", "cursive"],
       },
       animation: {
         blob: "blob 6s infinite",
         text: "text 5s ease infinite",
-
+        "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       keyframes: {
-        blob : {
-          "0%" : {
+        "open-menu": {
+          "0%": { transform: "scaleY(0)" },
+          "80%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
+        },
+        blob: {
+          "0%": {
             transform: "translate(-10px, 10px) scale(1)",
           },
           "33%": {
@@ -35,20 +42,20 @@ module.exports = {
           },
           "100%": {
             transform: "translate(-10px, 10px) scale(1)",
-          }
+          },
         },
         text: {
-          '0%, 100%': {
-             'background-size':'200% 200%',
-              'background-position': 'left center'
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
           },
-          '50%': {
-             'background-size':'200% 200%',
-              'background-position': 'right center'
-          }
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
-      }
     },
   },
   plugins: [],
-}
+};
