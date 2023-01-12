@@ -30,6 +30,6 @@
     }
 
     .mobileMenuLink {
-        @apply hover:bg-secondaryColor/50 hover:scale-110 py-5 hover:animate-spin 
+        @apply hover:bg-secondaryColor/50 hover:scale-110 py-5 hover:animate-spin font-MeriendaOne hover:text-orange-700
     }
 }
