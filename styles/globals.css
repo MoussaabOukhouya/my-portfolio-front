@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
 
 
@@ -26,5 +27,9 @@
         @apply px-6 py-2 border border-transparent bg-secondaryColor/20 rounded-full ml-4
         uppercase text-sm tracking-wider text-gray-200 transition-all hover:bg-thirdColor/30 hover:text-white font-Rowdies
         hover:scale-110
+    }
+
+    .mobileMenuLink {
+        @apply hover:bg-secondaryColor/50 hover:scale-110 py-5 hover:animate-spin 
     }
 }
