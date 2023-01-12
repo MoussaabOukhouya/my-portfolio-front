@@ -12,12 +12,14 @@ module.exports = {
       colors: {
         secondaryColor: "#CD9E45",
         thirdColor: "#A72414",
+        grayforme : "#767A89",
       },
 
       fontFamily: {
         Spline: ["Spline", "monospace"],
         Acme: ["Acme", "sans-serif"],
         Rowdies: ["Rowdies", "cursive"],
+        MeriendaOne : ["Merienda One","cursive"],
       },
       animation: {
         blob: "blob 6s infinite",
