@@ -115,9 +115,9 @@ export default function Header({}: Props) {
         </button>
 
         {menuOpen && (
-          <div className=" fixed top-0 left-0 w-full h-full flex justify-center items-center ">
+          <div className="animate-text  bg-gradient-to-l from-slate-800 to-grayforme  fixed top-0 left-0 w-full h-full flex justify-center items-center ">
           <section
-            className="absolute top-0 bg-black w-full text-5xl flex flex-col
+            className="absolute top-0  w-full text-5xl flex flex-col
         justify-content-center origin-top animate-open-menu"
           >
             <motion.button
@@ -140,10 +140,10 @@ export default function Header({}: Props) {
                 &times;
             </motion.button>
             
-            <nav className="flex flex-col min-h-screen items-center py-8 text-white">
+            <nav className="flex flex-col min-h-screen items-center py-8 text-white font-PermanentMarker ">
               <Link
                 href="#about"
-                className=" w-full text-center py-6 hover:opacity-90"
+                className="mobileMenuLink w-full text-center py-6 hover:opacity-90 "
               >
                 <motion.button 
                 initial={{
@@ -159,11 +159,11 @@ export default function Header({}: Props) {
                 transition={{
                   duration: 0.5,
                 }}
-                className="">About</motion.button>
+                className="uppercase">About</motion.button>
               </Link>
               <Link
                 href="#experience"
-                className="w-full text-center py-6 hover:opacity-90"
+                className="mobileMenuLink w-full text-center py-6 hover:opacity-90 "
               >
                 <motion.button
                 initial={{
@@ -179,11 +179,11 @@ export default function Header({}: Props) {
                 transition={{
                   duration: 0.5,
                 }}
-                 className="">Experience</motion.button>
+                 className="uppercase">Experience</motion.button>
               </Link>
               <Link
                 href="#projects"
-                className="w-full text-center py-6 hover:opacity-90"
+                className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
               >
                 <motion.button
                 initial={{
@@ -199,11 +199,11 @@ export default function Header({}: Props) {
                 transition={{
                   duration: 0.5,
                 }}
-                className="">Projects</motion.button>
+                className="uppercase">Projects</motion.button>
               </Link>
               <Link
                 href="#skills"
-                className="w-full text-center py-6 hover:opacity-90"
+                className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
               >
                 <motion.button
                 initial={{
@@ -219,11 +219,11 @@ export default function Header({}: Props) {
                 transition={{
                   duration: 0.5,
                 }}
-                className="">Skills</motion.button>
+                className="uppercase">Skills</motion.button>
               </Link>
               <Link
                 href="#contact"
-                className="w-full text-center py-6 hover:opacity-90"
+                className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
               >
                 <motion.button 
                 initial={{
@@ -239,7 +239,7 @@ export default function Header({}: Props) {
                 transition={{
                   duration: 0.5,
                 }}
-                className="">Contact</motion.button>
+                className="uppercase">Contact</motion.button>
               </Link>
             </nav>
           </section>
