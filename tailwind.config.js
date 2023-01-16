@@ -1,3 +1,5 @@
+const { transform } = require('typescript')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -24,10 +26,15 @@ module.exports = {
       animation: {
         blob: "blob 6s infinite",
         text: "text 5s ease infinite",
-        "open-menu": "open-menu 0.5s ease-in-out forwards",
+       MenuOpen: "MenuOpen 0.5s ease-in-out forwards",
+       rotate: "rotate 1s  infinite",
       },
       keyframes: {
-        "open-menu": {
+        rotate: {
+          "0%" : {transform: "rotate(0)"},
+          "100%" : {transform : "rotate(360)"},
+        },
+        MenuOpen: {
           "0%": { transform: "scaleY(0)" },
           "80%": { transform: "scaleY(1.2)" },
           "100%": { transform: "scaleY(1)" },
