@@ -53,7 +53,7 @@ export default function Header({}: Props) {
         }}
       >
         <div className="flex justify-center items-center">
-          <a href="http://localhost:3000/" className="hover:animate-pulse">
+          <a href="#hero" className="hover:animate-pulse">
             <Image src={logo} alt="myLogo" className="rounded-3xl" />
           </a>
         </div>
@@ -75,20 +75,20 @@ export default function Header({}: Props) {
           duration: 1,
         }}
       >
-        <div className=" m-2 ">
-          <Link href="#about" className="">
+        <div className=" m-2 z-50 ">
+          <Link href="#About" className="">
             <button className="heroButtons">About</button>
           </Link>
-          <Link href="#experience" className="">
+          <Link href="#Experience" className="">
             <button className="heroButtons">Experience</button>
           </Link>
-          <Link href="#projects" className="">
+          <Link href="#Projects" className="">
             <button className="heroButtons">Projects</button>
           </Link>
-          <Link href="#skills" className="">
+          <Link href="#Skills" className="">
             <button className="heroButtons">Skills</button>
           </Link>
-          <Link href="#contact" className="">
+          <Link href="#Contact" className="">
             <button className="heroButtons">Contact</button>
           </Link>
         </div>
@@ -115,9 +115,9 @@ export default function Header({}: Props) {
         </button>
 
         {menuOpen && (
-          <div className="animate-text  bg-gradient-to-l from-slate-800 to-grayforme  fixed top-0 left-0 w-full h-full flex justify-center items-center ">
+          <div className=" overflow-y-scroll animate-text  bg-gradient-to-l from-slate-800 to-grayforme  fixed top-0 left-0 w-full h-full flex justify-center items-center z-50">
           <section
-            className="absolute top-0  w-full text-5xl flex flex-col
+            className=" absolute top-0  w-full text-5xl flex flex-col
         justify-content-center origin-top animate-open-menu"
           >
             <motion.button
@@ -142,8 +142,9 @@ export default function Header({}: Props) {
             
             <nav className="flex flex-col min-h-screen items-center py-8 text-white font-PermanentMarker ">
               <Link
-                href="#about"
+                href="#About"
                 className="mobileMenuLink w-full text-center py-6 hover:opacity-90 "
+                onClick={handleCloseButtonClick}
               >
                 <motion.button 
                 initial={{
@@ -162,8 +163,9 @@ export default function Header({}: Props) {
                 className="uppercase">About</motion.button>
               </Link>
               <Link
-                href="#experience"
+                href="#Experience"
                 className="mobileMenuLink w-full text-center py-6 hover:opacity-90 "
+                onClick={handleCloseButtonClick}
               >
                 <motion.button
                 initial={{
@@ -182,8 +184,9 @@ export default function Header({}: Props) {
                  className="uppercase">Experience</motion.button>
               </Link>
               <Link
-                href="#projects"
+                href="#Projects"
                 className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
+                onClick={handleCloseButtonClick}
               >
                 <motion.button
                 initial={{
@@ -202,8 +205,9 @@ export default function Header({}: Props) {
                 className="uppercase">Projects</motion.button>
               </Link>
               <Link
-                href="#skills"
+                href="#Skills"
                 className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
+                onClick={handleCloseButtonClick}
               >
                 <motion.button
                 initial={{
@@ -222,8 +226,9 @@ export default function Header({}: Props) {
                 className="uppercase">Skills</motion.button>
               </Link>
               <Link
-                href="#contact"
+                href="#Contact"
                 className="mobileMenuLink w-full text-center py-6 hover:opacity-90"
+                onClick={handleCloseButtonClick}
               >
                 <motion.button 
                 initial={{
