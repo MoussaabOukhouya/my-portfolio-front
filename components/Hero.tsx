@@ -29,8 +29,8 @@ export default function Hero({}: Props) {
         />
         <div>
           <h2
-            className="bg-clip-text lg:text-3xl flex justify-center uppercase  pb-2 tracking-[8px] font-bold font-Spline 
-        animate-text bg-gradient-to-r from-purple-500 via-yellow-300 to-red-500 text-xl  text-transparent"
+            className="bg-clip-text lg:text-3xl flex justify-center uppercase  pb-2 tracking-[12px] font-bold font-Spline 
+        animate-text bg-gradient-to-r from-purple-500 via-yellow-300 to-red-500 text-xl  text-transparent m-2"
           >
             Software Engineer
           </h2>
