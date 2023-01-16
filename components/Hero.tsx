@@ -29,13 +29,13 @@ export default function Hero({}: Props) {
         />
         <div>
           <h2
-            className="bg-clip-text lg:text-3xl flex justify-center uppercase  pb-2 tracking-[10px] font-bold font-Spline 
+            className="bg-clip-text lg:text-3xl flex justify-center uppercase  pb-2 tracing-[8px] md:tracking-[12px] lg:tracking-[15px] font-bold font-Spline 
         animate-text bg-gradient-to-r from-purple-500 via-yellow-300 to-red-500 text-xl  text-transparent m-2"
           >
             Software Engineer
           </h2>
           <h1 className="text-xl lg:text-3xl  px-10 font-Acme  ">
-            <span className="text-gray-200 mr-3 bg-clip-text  ">{text}</span>
+            <span className="text-gray-200 mr-3 bg-clip-text text-1xl md:text-2xl lg:text-3xl ">{text}</span>
             <Cursor cursorColor="#F7AB0A" />
           </h1>
         </div>
