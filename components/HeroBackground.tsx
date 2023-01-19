@@ -14,7 +14,7 @@ export default function HeroBackground({backgroundType}: Props) {
     return {
       
       fullScreen: {
-        enable: false, // enabling this will make the canvas fill the entire screen, it's enabled by default
+        enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
         zIndex: 1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
       },
       interactivity: {
@@ -35,6 +35,7 @@ export default function HeroBackground({backgroundType}: Props) {
           repulse: {
             distance: 100, // distance of the particles from the cursor
           },
+          
         },
       },
       particles: {
@@ -62,7 +63,7 @@ export default function HeroBackground({backgroundType}: Props) {
   }, []);
 
   
-  if(backgroundType == "Hero"){
+  if(backgroundType == "for contact better"){
   return (
     <div className="flex justify-center z-">
       <div className="">
@@ -75,7 +76,7 @@ export default function HeroBackground({backgroundType}: Props) {
       </div>
     </div>
   );}
- else if(backgroundType == "About"){
+ else if(backgroundType == "About" || backgroundType == "Hero"){
   return (
    <div className="">
     
