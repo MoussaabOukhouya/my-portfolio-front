@@ -23,7 +23,7 @@ export default function Hero({}: Props) {
       <HeroBackground backgroundType="Hero" />
       <div className="absolute flex flex-col justify-center   ">
         <Image
-          className=" rounded-full h-32 w-32 mx-auto object-cover "
+          className=" rounded-full h-32 w-32 mx-auto object-cover m-2"
           src={me}
           alt="Profile Image"
         />
