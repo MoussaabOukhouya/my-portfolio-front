@@ -40,7 +40,7 @@ export default function HeroBackground({backgroundType}: Props) {
       },
       particles: {
         links: {
-          enable: false, // enabling this will make particles linked together
+          enable: true, // enabling this will make particles linked together
           distance: 200, // maximum distance for linking the particles
         },
         move: {
