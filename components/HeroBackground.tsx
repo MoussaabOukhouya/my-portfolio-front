@@ -42,8 +42,8 @@ export default function HeroBackground({backgroundType}: Props) {
       particles: {
         number: {
           density: {
-            "enable": false,
-            "area": 800
+            enable: true,
+            area: 800
           },
           limit: 0,
           value: 40
