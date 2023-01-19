@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 
 type Props = {backgroundType:string};
 
@@ -15,7 +16,7 @@ export default function HeroBackground({backgroundType}: Props) {
       
       fullScreen: {
         enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
-        zIndex: 1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+        zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
       },
       interactivity: {
         events: {
@@ -30,7 +31,7 @@ export default function HeroBackground({backgroundType}: Props) {
         },
         modes: {
           push: {
-            quantity: 3, // number of particles to add on click
+            quantity: 1, // number of particles to add on click
           },
           repulse: {
             distance: 100, // distance of the particles from the cursor
@@ -39,6 +40,14 @@ export default function HeroBackground({backgroundType}: Props) {
         },
       },
       particles: {
+        number: {
+          density: {
+            "enable": false,
+            "area": 800
+          },
+          limit: 0,
+          value: 40
+        },
         links: {
           enable: true, // enabling this will make particles linked together
           distance: 200, // maximum distance for linking the particles
@@ -48,7 +57,7 @@ export default function HeroBackground({backgroundType}: Props) {
           speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {
-          value: { min: 0.3, max: 0.7 }, // using a different opacity, to have some semitransparent effects
+          value: { min: 0.2, max: 0.4 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
           value: { min: 1, max: 3 }, // let's randomize the particles size a bit
@@ -58,7 +67,7 @@ export default function HeroBackground({backgroundType}: Props) {
   }, []);
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
+    await loadFull(engine);
     // loadFull(engine); // for this sample the slim version is enough, choose whatever you prefer, slim is smaller in size but doesn't have all the plugins and the mouse trail feature
   }, []);
 
