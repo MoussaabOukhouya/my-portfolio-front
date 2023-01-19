@@ -115,10 +115,10 @@ export default function Header({}: Props) {
         </button>
 
         {menuOpen && (
-          <div className=" overflow-y-scroll animate-text  bg-gradient-to-l from-slate-800 to-grayforme  fixed top-0 left-0 w-full h-full flex justify-center items-center z-50">
+          <div className=" h-screen  animate-text   bg-gradient-to-l from-slate-800 to-slate-500  fixed top-0 left-0 w-full  flex justify-center  z-50">
           <section
-            className=" absolute top-0  w-full text-5xl flex flex-col
-        justify-content-center origin-top animate-open-menu"
+            className="    w-full text-5xl md:text-7xl  flex flex-col 
+          origin-top animate-open-menu"
           >
             <motion.button
             initial={{
@@ -136,7 +136,7 @@ export default function Header({}: Props) {
               duration: 0.3,
             }}
             onClick={handleCloseButtonClick}
-            className="text-8xl self-end px-6 text-white origin-top-right animate-close-menu">
+            className="text-7xl lg:text-8xl self-end px-6 text-white origin-top-right animate-close-menu">
                 &times;
             </motion.button>
             
