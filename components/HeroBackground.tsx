@@ -43,10 +43,10 @@ export default function HeroBackground({backgroundType}: Props) {
         number: {
           density: {
             enable: true,
-            area: 800
+            area: 1900
           },
           limit: 0,
-          value: 40
+          value: 45
         },
         links: {
           enable: true, // enabling this will make particles linked together
