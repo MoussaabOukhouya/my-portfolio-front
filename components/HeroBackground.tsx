@@ -46,7 +46,7 @@ export default function HeroBackground({backgroundType}: Props) {
             area: 1900
           },
           limit: 0,
-          value: 45
+          value: 60
         },
         links: {
           enable: true, // enabling this will make particles linked together
