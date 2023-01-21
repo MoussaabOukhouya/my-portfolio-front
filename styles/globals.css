@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
 
 @layer utilities {
@@ -33,3 +33,6 @@
         @apply hover:bg-secondaryColor/50 hover:scale-110 py-5 hover:animate-spin font-MeriendaOne hover:text-orange-700
     }
 }
+
+
+
