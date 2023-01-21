@@ -22,6 +22,7 @@ module.exports = {
         Acme: ["Acme", "sans-serif"],
         Rowdies: ["Rowdies", "cursive"],
         MeriendaOne : ["Merienda One","cursive"],
+        RobotoSlab: ["Roboto Slab", "serif"],
       },
       animation: {
         blob: "blob 6s infinite",
