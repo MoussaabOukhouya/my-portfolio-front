@@ -32,7 +32,7 @@ export default function About() {
 
 
   return (
-    <div ref={ref} className="relative h-screen flex flex-col space-y-8 justify-center items-center text-center overflow-hidden m-2 ">
+    <div ref={ref} className="relative h-screen flex flex-col space-y-8 justify-center items-center text-center overflow-hidden  ">
 
       <div className="relative z-0 m-2 h-auto rounded-lg bg-black grid grid-cols-1 grid-rows-1 items-center justify-center  opacity-75 max-w-5xl">
         <div className="h-9 w-full bg-gray-500 opacity-50 rounded-lg"></div>
@@ -43,7 +43,7 @@ export default function About() {
         </div>
         <div className="m-2 p-4 ">
         {isVisible && (
-            <div className="text-sm md:text-sm italic lg:text-lg text-left text-white leading-relaxed font-Spline">
+            <div className="text-xs md:text-sm italic lg:text-lg text-left text-white leading-relaxed font-Spline">
               <Animatedwords text={myString} />
             </div>
           )}
