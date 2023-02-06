@@ -37,9 +37,11 @@ export default function About() {
       <div className="relative z-0 m-2 h-auto rounded-lg bg-black grid grid-cols-1 grid-rows-1 items-center justify-center  opacity-75 max-w-5xl">
         <div className="h-9 w-full bg-gray-500 opacity-50 rounded-lg"></div>
         <div className="absolute w-full h-auto top-0 z-10 ">
-          <p className="m-1 pl-1 text-xl font-semibold md:text-2xl lg:text-2xl font-RobotoSlab text-white text-center">
+          <h3 className=" uppercase tracking-[12px] top-24 m-1 pl-1 text-xl font-semibold md:text-2xl lg:text-2xl font-RobotoSlab text-white text-center">
             About
-          </p>
+          </h3>
+          
+        
         </div>
         <div className="m-2 p-4 ">
         {isVisible && (
